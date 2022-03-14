@@ -5,13 +5,15 @@
 }
 
 .container{
-    height: 100vh;
+    height: 100%;
     background-color:#1e2d3b;
     width: 100%;
-   
+    
 }
 
 .row{
+    margin:0px auto;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
