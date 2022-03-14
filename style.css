@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color:#1e2d3b;
+    width: 100%;
+   
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box{
+    width:calc(100% / 5 - 20px);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #2e3a46;
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+h2{
+    color: #fff;
+}
+.text{
+    color: gray;
+}
