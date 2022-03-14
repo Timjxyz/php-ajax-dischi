@@ -4,14 +4,14 @@ const app = new Vue(
         data: {
             endpoint:'http://localhost/php-ajax-dischi/server.php',
             discs: [],
+            selectedGenre:"",
            
         },
         methods:{
-            
+      
         },
 
         mounted() {
-            this.loadingInProgress=true
                
             // Make a request for a user with a given ID
             axios

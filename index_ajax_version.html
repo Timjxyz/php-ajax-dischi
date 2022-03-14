@@ -9,13 +9,22 @@
 </head>
 <body>
     <div id="app">
+        <header>
+            <img src="https://static.movietele.it/files/styles/image-w300/public/images/2022/01/mtv.png" alt="">
+            <select v-model="selectedGenre" @serchDisc="selectedGenre">
+                <option value="">Seleziona un genere</option>
+                <option v-for="(disc, index) in discs" :value="genres" :key="index">{{disc.genre}}</option>
+        
+            </select>
+        
+        </header>
         <main class="container">
             <div class="row">     
                 <div class="box" v-for="(disc, index) in discs">
                     <img :src="disc.poster" :alt="disc.author">
                     <h2>{{disc.title}}</h2>
                     <div class="text">{{disc.author}}</div>
-                    <div class="text">{{disc.gender}}</div>
+                    <div class="text">{{disc.genre}}</div>
                     <div class="text">{{disc.year}}</div>
                 </div>
             </div>
