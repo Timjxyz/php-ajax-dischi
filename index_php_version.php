@@ -23,9 +23,9 @@ require __DIR__ . '/database.php';
                     echo '<div class="box">';        
                         echo "<img src=".$singleData['poster']." />";          
                         echo "<h2>". $singleData['title']."</h2>";    
-                        echo "<div>". $singleData['author']."</div>";    
-                        echo "<div>". $singleData['genre']."</div>";   
-                        echo "<div>". $singleData['year']."</div>"; 
+                        echo "<div class='text'>". $singleData['author']."</div>";    
+                        echo "<div class='text'>". $singleData['genre']."</div>";   
+                        echo "<div class='text'>". $singleData['year']."</div>"; 
                     echo"</div>";
                 }
                 
