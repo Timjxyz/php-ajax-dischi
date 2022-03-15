@@ -18,7 +18,7 @@ const app = new Vue(
             .get(this.endpoint)
             
             .then((response) => {
-                this.discs = response.data.response;
+                this.discs = response.data;
                 console.log(response)
             })
             .catch(function (error) {

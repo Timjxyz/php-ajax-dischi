@@ -21,7 +21,7 @@ require __DIR__ . '/database.php';
             
                 foreach($database as $singleData){     
                     echo '<div class="box">';        
-                        echo "<img src=".$singleData['poster'].">";          
+                        echo "<img src='".$singleData['poster']."'>";          
                         echo "<h2>". $singleData['title']."</h2>";    
                         echo "<div class='text'>". $singleData['author']."</div>";    
                         echo "<div class='text'>". $singleData['genre']."</div>";   
