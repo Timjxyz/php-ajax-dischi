@@ -11,7 +11,7 @@
     <div id="app">
         <header>
             <img src="https://static.movietele.it/files/styles/image-w300/public/images/2022/01/mtv.png" alt="">
-            <select v-model="selectedGenre" @serchDisc="selectedGenre">
+            <select v-model="selectedGenre">
                 <option value="">Seleziona un genere</option>
                 <option v-for="(disc, index) in discs" :value="genres" :key="index">{{disc.genre}}</option>
         
